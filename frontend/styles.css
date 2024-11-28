@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+ }
+ 
+ h1 {
+    color: #333;
+ }
+ 
+ .button-container {
+    margin-bottom: 20px;
+ }
+ 
+ .form-container {
+    margin-bottom: 20px;
+ }
+ 
+ .hidden {
+    display: none;
+ }
+ 
+ input {
+    display: block;
+    margin-bottom: 10px;
+ }
+ 
+ button {
+    padding: 10px;
+ }

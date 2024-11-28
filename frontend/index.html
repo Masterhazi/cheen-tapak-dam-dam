@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Medication Reminder App</title>
+</head>
+<body>
+    <h1>Medication Reminder App</h1>
+
+    <div id="authContainer">
+        <div class="button-container">
+            <button id="loginButton">Login</button>
+            <button id="registerButton">Register</button>
+        </div>
+
+        <!-- Login Form -->
+        <div id="loginForm" class="form-container hidden">
+            <h2>Login</h2>
+            <input type="email" id="loginEmail" placeholder="Email" required>
+            <input type="password" id="loginPassword" placeholder="Password" required>
+            <button id="loginSubmitButton">Login</button>
+            <button id="googleLoginButton">Login with Google</button>
+        </div>
+
+        <!-- Register Form -->
+        <div id="registerForm" class="form-container hidden">
+            <h2>Register</h2>
+            <input type="text" id="registerName" placeholder="Name" required>
+            <input type="email" id="registerEmail" placeholder="Email" required>
+            <input type="password" id="registerPassword" placeholder="Password" required>
+            <button id="registerSubmitButton">Register</button>
+        </div>
+
+        <!-- User Data Display -->
+        <div id="userDataContainer" style="display:none;">
+            <h2>User Data</h2>
+            <p id="userName"></p>
+            <p id="userEmail"></p>
+
+            <label for="medicationCount">How many times do you take medication daily?</label>
+            <input type="number" id="medicationCount" min="1" required>
+
+            <div id="timeInputs"></div>
+
+            <button id="setReminderButton">Set Reminder</button>
+            <button id="logoutButton">Logout</button>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
